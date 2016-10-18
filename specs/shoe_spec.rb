@@ -18,5 +18,9 @@ class TestShoe < MiniTest::Test
     assert_equal("Mickey", @shoe.orderer)
   end
 
+  def test_quantity()
+    assert_equal(Fixnum, @shoe.quantity.class)
+    assert_equal(2, @shoe.quantity)
+  end
 
 end
